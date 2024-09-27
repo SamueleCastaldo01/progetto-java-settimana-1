@@ -13,11 +13,17 @@ public class Immagine implements ElementoMultimediale {
     }
 
     public int aumentaLuminosita() {
-        return luminosita++;
+        if(luminosita < 10) {
+            luminosita++;
+        }
+        return luminosita;
     }
 
     public int diminuisciLuminosita() {
-        return luminosita--;
+        if(luminosita > 0) {
+            luminosita --;
+        }
+        return luminosita;
     }
 
     public void show() {

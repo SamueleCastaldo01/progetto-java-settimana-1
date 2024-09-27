@@ -18,10 +18,16 @@ public class Video extends RegistrazioneAudio {
     }
 
     public int aumentaLuminosita() {
+        if(luminosita < 10) {
+            luminosita++;
+        }
         return luminosita++;
     }
 
     public int diminuisciLuminosita() {
-        return luminosita--;
+        if(luminosita > 0) {
+            luminosita--;
+        }
+        return luminosita;
     }
 }
