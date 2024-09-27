@@ -71,7 +71,7 @@ public class Main {
 }
 
 /*
-Struttura:
+la mia Struttura:
 interfaccia Elemento multimediale
 interfaccia Riproducibile che estende l'interfaccia Elemento Multimediale
 class Immagine che implementa l'interfaccia Elemento Multimediale
@@ -83,4 +83,11 @@ ElementoMultimediale > Riproducibile
 ElementoMultimediale > Immagine
 ElementoMultimediale > Riproducibile > RegistrazioneAudio
 ElementoMultimediale > Riproducibile > RegistrazioneAudio > Video
+
+Un altra possiible struttura
+classe astratta ElementoMultimediale
+classe astratta riproducibile estende ElementoMultimediale
+classe Immagine estende Elemento Multimediale
+RegistrazioneAudio estende Riproducibile
+LettoreMultimediale estende Registrazione Audio
  */
