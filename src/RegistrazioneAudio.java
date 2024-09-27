@@ -14,6 +14,11 @@ public class RegistrazioneAudio implements Riproducibile{
         return durata;
     }
 
+    @Override
+    public String getTitolo() {
+        return titolo;
+    }
+
     public int getVolume() {
         return volume;
     }
@@ -25,16 +30,17 @@ public class RegistrazioneAudio implements Riproducibile{
         }
     }
 
-    @Override
-    public String getTitolo() {
-        return titolo;
-    }
-
     public int alzaVolume() {
-        return volume++;
+        if(volume < 10) {
+            volume++;
+        }
+        return volume;
     }
 
     public int abbassaVolume() {
-        return volume--;
+        if(volume > 0) {
+            volume--;
+        }
+        return volume;
     }
 }

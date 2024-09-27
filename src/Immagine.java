@@ -20,7 +20,7 @@ public class Immagine implements ElementoMultimediale {
         return luminosita--;
     }
 
-    public void shiw() {
+    public void show() {
         //repeat è un metodo della classe string che ripete quella stringa n volte
         System.out.println(titolo + " " + "*".repeat(luminosita));
     }
