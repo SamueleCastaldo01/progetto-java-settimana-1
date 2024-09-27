@@ -14,6 +14,10 @@ public class RegistrazioneAudio implements Riproducibile{
         return durata;
     }
 
+    public int getVolume() {
+        return volume;
+    }
+
     @Override
     public void play() {
         for (int i= 0; i < durata; i++) {
