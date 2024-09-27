@@ -71,6 +71,10 @@ public class Main {
 }
 
 /*
+metodo repeat, è un metodo di string che prende come parametro un intero n e concatena n volte la Stringa
+alza...() e abbassa(), hanno il controllo un range che va da 0 fino a un massimo di 10
+
+
 la mia Struttura:
 interfaccia Elemento multimediale
 interfaccia Riproducibile che estende l'interfaccia Elemento Multimediale
